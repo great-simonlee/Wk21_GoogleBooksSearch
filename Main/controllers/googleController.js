@@ -13,8 +13,8 @@ module.exports = {
       .get("https://www.googleapis.com/books/v1/volumes", {
         params
       })
-      .then(results =>
-        results.data.items.filter(
+      .then(results => {
+        return results.data.items.filter(
           result =>
             result.volumeInfo.title &&
             result.volumeInfo.infoLink &&
@@ -23,6 +23,7 @@ module.exports = {
             result.volumeInfo.imageLinks &&
             result.volumeInfo.imageLinks.thumbnail
         )
+      }
       )
       .then(apiBooks =>
         db.Book.find().then(dbBooks =>
