@@ -26,7 +26,7 @@ This project is to create a new React-based Google Books Search app. This assign
 
 ## Demo
 
-![Portfolio Demo](https://github.com/great-simonlee/Wk10_Team_Profile_Generator/blob/main/Team%20Profile%20Generator.gif)
+![Portfolio Demo](https://github.com/great-simonlee/Wk21_GoogleBooksSearch/blob/main/demo.gif)
 
 ## Features
 
